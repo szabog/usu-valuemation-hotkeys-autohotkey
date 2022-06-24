@@ -43,9 +43,9 @@ ticket_description_request()
     
     ; Insert the template
     Send, ^bLanguage:^b{Space}{Enter}
-    Send, ^bDescription/translation:^b{Enter 3}
+    Send, ^bDescription/Translation:^b{Enter 3}
     Send, ^bKM ref.:^b (not found) (keywords: ){Space}{Enter}
-    Send, ^bActions taken:^b -{Enter 2}
+    Send, ^bActions/Check List:^b -{Enter 2}
     Send, ^bScreenshots/attachments:^b -{Enter 2}
     
     text_template_separator()
@@ -63,8 +63,8 @@ ticket_description_incident()
     Send, {Space 2}^bSteps to reproduce:^b{Enter}
     Send, {Space 2}1){Space}{Enter 2}
     Send, ^bKM ref.:^b (not found) (keywords: ){Space}{Enter}
-    Send, ^bTroubleshooting steps:^b -{Enter 2}
-    Send, ^bScreenshot of the error:^b -{Enter 2}
+    Send, ^bTroubleshooting:^b -{Enter 2}
+    Send, ^bScreenshot:^b -{Enter 2}
     
     text_template_separator()
 }
@@ -86,8 +86,7 @@ ticket_description_mi()
     Send, {Space 2}^bTelephone status (incoming, outgoing calls):^b{Space}{Enter}
     Send, {Space 2}^bFirst occurrence:^b At approx. YYYY-MM-DD HH:mm{Space}{Enter 2}
     Send, ^bKM ref.:^b N/A{Space}{Enter}
-    Send, ^bTroubleshooting steps:^b -{Enter 2}
-    Send, ^bScreenshot of the error:^b -{Enter 2}
+    Send, ^bScreenshot:^b -{Enter 2}
     
     text_template_separator()
 }
